@@ -4,15 +4,31 @@
     <title>RSS Agregator</title>
   </head>
   <body>
-    <div id="app" class="container">
-      <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
-          content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </div>
-    </div>
+    <main id="app" class="">
+      <section class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+              <h1 class="display-4">RSS Reader!</h1>
+              <p class="lead">Add RSS channels of your interest with the form! Enjoy it!</p>
+              <form action>
+                <div class="form-row">
+                  <div class="col">
+                    <label class="sr-only" for="url">RSS link</label>
+                    <input autofocus required type="url" class="form-control form-control-lg mb-2" id="url" name="url" aria-label="url" placeholder="RSS link">
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-lg btn-primary px-sm-5" aria-label="add">Add</button>
+                  </div>
+                </div>
+              </form>
+              <p class="text-muted">
+                Example: https://ru.hexlet.io/lessons.rss
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
